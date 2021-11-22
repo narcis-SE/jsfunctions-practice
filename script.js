@@ -49,18 +49,23 @@ printArray(anotherArray);
 const myFriends = (person1, person2 = "Jack") => `${person1} and ${person2} are my friends. `;
 myFriends("Steve");
 
-//Rest Parameter
-
+//Rest Parameter Examples:
+//No Rest Paramenter
 function addAnAmountOfNumbers(num1, num2){
     let total = 0;
     total = num1 + num2;
     return total;
 }
-
 console.log(addAnAmountOfNumbers(1,2,3,4,5)); //Returns 3
 
+//Has Rest Parameter
 function addAllNumbers(...numbers){
     return numbers.reduce((prev,next) => prev + next);
 }
 console.log(addAllNumbers(1,2,3,4,5,6));
 console.log(addAllNumbers(1,2,3,4));
+
+
+
+
+
